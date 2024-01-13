@@ -13,7 +13,7 @@ app.get('/search', (request, response) => {
 
 app.post('/search', (request, response) => {
     let userMovieTitle = request.body.movieTitle;
-    
+
     let movieUrl = `https://api.themoviedb.org/3/search/movie?query=${userMovieTitle}&api_key=4e5df50980f54f81c3b6e39dc0133fa4`;
     let genresUrl = 'https://api.themoviedb.org/3/genre/movie/list?api_key=4e5df50980f54f81c3b6e39dc0133fa4&language=en';
     
@@ -55,6 +55,6 @@ app.post('/search', (request, response) => {
     }));
 });
 
-app.listen(3000, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
     console.log('Server is running.');
 });
