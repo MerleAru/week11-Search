@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", "sans-serif";
+}
+
+.container {
+    margin: 2rem auto;
+    width: 75%;
+}
+
+.form-container {
+    width: 75%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+form {
+    width: 75%;
+    margin: 0 auto;
+}
+/**/
+
+form input {
+    padding: 5px;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    background: #EEE;
+    font-family: "Manrope", "sans-serif";
+}
+
+form button {
+    padding: 5px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    background: #DDD;
+    font-family: "Manrope", "sans-serif";
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: royalblue;
+    color: #fff;
+}
+
+/**/
+.result-container {
+    text-align: center;
+}
+
+.movie-data-list {
+    list-style: none;
+    line-height: 2rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+img {
+    width: 250px;
+    border-radius: 5px;
+}
